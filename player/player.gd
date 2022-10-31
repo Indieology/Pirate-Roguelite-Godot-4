@@ -5,10 +5,10 @@ extends CharacterBody2D
 @onready var states = $state_manager
 
 func _ready() -> void:
-	pass
+	states.init(self)
 
 func _unhandled_input(event: InputEvent):
-	pass
+	states.input(event)
 
 func _physics_process(delta: float) -> void:
-	pass
+	states.physics_process(delta)
