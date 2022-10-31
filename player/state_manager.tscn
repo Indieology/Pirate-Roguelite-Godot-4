@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://blc4lw77j315i"]
+
+[node name="state_manager" type="Node"]
+
+[node name="idle" type="Node" parent="."]
+
+[node name="run" type="Node" parent="."]
+
+[node name="dash" type="Node" parent="."]
