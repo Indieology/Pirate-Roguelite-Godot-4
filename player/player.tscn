@@ -1,13 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://tr0xjuaced7e"]
+[gd_scene load_steps=4 format=3 uid="uid://tr0xjuaced7e"]
 
 [ext_resource type="Texture2D" uid="uid://d1lv7nh8pt0nc" path="res://art/player art/idle.png" id="1_sstv4"]
-[ext_resource type="Script" path="res://Player/player.gd" id="1_t18o6"]
-[ext_resource type="PackedScene" uid="uid://blc4lw77j315i" path="res://player/state_manager.tscn" id="3_ppgfx"]
+[ext_resource type="Script" path="res://player/state_manager.gd" id="2_gniqm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2mn61"]
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_t18o6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_sstv4")
@@ -16,6 +14,11 @@ hframes = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_2mn61")
 
-[node name="state_manager" parent="." instance=ExtResource("3_ppgfx")]
+[node name="state_manager" type="Node" parent="."]
+script = ExtResource("2_gniqm")
 
-[editable path="state_manager"]
+[node name="idle" type="Node" parent="state_manager"]
+
+[node name="run" type="Node" parent="state_manager"]
+
+[node name="dash" type="Node" parent="state_manager"]
