@@ -1,11 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://blc4lw77j315i"]
+[gd_scene load_steps=3 format=3 uid="uid://ches007suumpg"]
 
-[ext_resource type="Script" path="res://player/state_manager.gd" id="1_k6mnq"]
+[ext_resource type="Script" path="res://Player/state machine/state_manager.gd" id="1_48pqf"]
+[ext_resource type="Script" path="res://Player/state machine/idle.gd" id="2_bmyxa"]
 
 [node name="state_manager" type="Node"]
-script = ExtResource("1_k6mnq")
+script = ExtResource("1_48pqf")
 
 [node name="idle" type="Node" parent="."]
+script = ExtResource("2_bmyxa")
 
 [node name="run" type="Node" parent="."]
 

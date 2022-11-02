@@ -12,30 +12,20 @@ _global_script_classes=[{
 "base": "Node",
 "class": &"BaseState",
 "language": &"GDScript",
-"path": "res://player/base_state.gd"
-}, {
-"base": "CharacterBody2D",
-"class": &"Character",
-"language": &"GDScript",
-"path": "res://player/player.gd"
+"path": "res://base_state.gd"
 }, {
 "base": "CharacterBody2D",
 "class": &"Player",
 "language": &"GDScript",
-"path": "res://Player/player.gd"
+"path": "res://player/player.gd"
 }]
 _global_script_class_icons={
 "BaseState": "",
-"Character": "",
 "Player": ""
 }
 
 [application]
 
-config/name="PirateRoguelite"
+config/name="PirateRougelitev2"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
-
-[rendering]
-
-textures/canvas_textures/default_texture_filter=0

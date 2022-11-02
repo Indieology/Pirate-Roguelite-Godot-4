@@ -12,3 +12,4 @@ func _unhandled_input(event: InputEvent):
 
 func _physics_process(delta: float) -> void:
 	states.physics_process(delta)
+

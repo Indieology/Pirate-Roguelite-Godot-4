@@ -4,12 +4,16 @@ extends Node
 enum State {
 	Null,
 	Idle,
-	Run
+	Run,
+	Dash
 }
+
+#export (string) var animation_name
 
 var player: Player
 
 func enter() -> void:
+	#player.animations.play(animation_name)
 	pass
 
 func exit() -> void:

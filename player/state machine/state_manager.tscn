@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://player/state machine/state_manager.gd" id="1_coago"]
+
+[node name="state_manager" type="Node"]
+script = ExtResource("1_coago")
+
+[node name="idle" type="Node" parent="."]
+
+[node name="run" type="Node" parent="."]
+
+[node name="dash" type="Node" parent="."]
