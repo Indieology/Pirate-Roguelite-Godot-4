@@ -1,10 +1,11 @@
 class_name Player
 extends CharacterBody2D
 
-@onready var sprite = $Sprite2D
-@onready var states = $state_manager
+@onready var sprite = $Sprite2D #Player sprite node
+@onready var states = $state_manager #State machine attached to player
 
 func _ready() -> void:
+	#Initialize state machine by passing a reference of the player to all states
 	states.init(self)
 
 func _unhandled_input(event: InputEvent):
@@ -13,3 +14,5 @@ func _unhandled_input(event: InputEvent):
 func _physics_process(delta: float) -> void:
 	states.physics_process(delta)
 
+func update_sprite(sprite_key: int) -> void:
+	sprite.frame = sprite_key
