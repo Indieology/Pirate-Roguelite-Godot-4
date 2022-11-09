@@ -4,9 +4,3 @@
 
 [node name="state_manager" type="Node"]
 script = ExtResource("1_coago")
-
-[node name="idle" type="Node" parent="."]
-
-[node name="run" type="Node" parent="."]
-
-[node name="dash" type="Node" parent="."]
