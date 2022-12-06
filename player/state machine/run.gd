@@ -8,3 +8,7 @@ func input(event: InputEvent) -> int:
 		return new_state
 	
 	return State.Null
+
+func enter() -> void:
+	
+	get_parent().get_parent().state_label.text = "run state"

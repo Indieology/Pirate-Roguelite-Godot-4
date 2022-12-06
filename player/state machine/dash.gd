@@ -6,7 +6,7 @@ var dash_direction: int = 0
 
 func enter() -> void:
 	#set dash direction and animation
-	pass
+	get_parent().get_parent().state_label.text = "dash state"
 
 func input(event: InputEvent) -> int:
 	return State.Null

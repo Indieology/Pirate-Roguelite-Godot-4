@@ -13,6 +13,14 @@
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ln276")
 
+[node name="Label" type="Label" parent="."]
+offset_left = -23.0
+offset_top = -33.0
+offset_right = 48.0
+offset_bottom = -7.0
+scale = Vector2(0.72, 0.72)
+text = "run state"
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_ol2x5")
 hframes = 8
