@@ -33,9 +33,13 @@ _global_script_class_icons={
 [application]
 
 config/name="PirateRougelitev2"
-run/main_scene="res://player/player.tscn"
+run/main_scene="res://World/world.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
 
 [input]
 
