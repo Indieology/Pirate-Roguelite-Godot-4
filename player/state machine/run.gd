@@ -11,4 +11,4 @@ func input(event: InputEvent) -> int:
 
 func enter() -> void:
 	
-	get_parent().get_parent().state_label.text = "run state"
+	player.state_label.text = "run state"

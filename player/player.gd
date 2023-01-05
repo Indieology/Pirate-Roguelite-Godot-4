@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var sprite = $Sprite2D #Player sprite node
 @onready var states = $state_manager #State machine attached to player
 @onready var state_label = $Label #Label to display current state
+@onready var dash_timer = $DashTime #how long the player dashes
 
 func _ready() -> void:
 	#Initialize state machine by passing a reference of the player to all states

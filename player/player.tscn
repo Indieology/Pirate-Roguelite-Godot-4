@@ -14,11 +14,12 @@
 script = ExtResource("1_ln276")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -23.0
-offset_top = -33.0
-offset_right = 48.0
-offset_bottom = -7.0
+offset_left = -14.0
+offset_top = -25.0
+offset_right = 57.0
+offset_bottom = 1.0
 scale = Vector2(0.72, 0.72)
+theme_override_font_sizes/font_size = 10
 text = "run state"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -28,6 +29,10 @@ hframes = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource("CapsuleShape2D_m5lg1")
+
+[node name="DashTime" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
 
 [node name="state_manager" parent="." instance=ExtResource("2_cwf0l")]
 
