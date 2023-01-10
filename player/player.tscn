@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8jj48tjhgeeo"]
+[gd_scene load_steps=10 format=3 uid="uid://b8jj48tjhgeeo"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ln276"]
+[ext_resource type="FontFile" uid="uid://dggqili144ey4" path="res://art/GUI/Minecraft.ttf" id="2_5avrl"]
 [ext_resource type="PackedScene" uid="uid://btqhocr6gggqt" path="res://player/state machine/state_manager.tscn" id="2_cwf0l"]
 [ext_resource type="Texture2D" uid="uid://d1lv7nh8pt0nc" path="res://art/player art/idle.png" id="2_ol2x5"]
 [ext_resource type="Script" path="res://player/state machine/idle.gd" id="4_5mlya"]
@@ -14,12 +15,11 @@
 script = ExtResource("1_ln276")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -14.0
-offset_top = -25.0
-offset_right = 57.0
-offset_bottom = 1.0
+offset_left = -22.0
+offset_top = -26.0
+offset_right = 49.0
 scale = Vector2(0.72, 0.72)
-theme_override_font_sizes/font_size = 10
+theme_override_fonts/font = ExtResource("2_5avrl")
 text = "run state"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
